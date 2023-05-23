@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerDarbotvarkesTipas">
+    <item>Susitikimas</item>
+    <item>Apžiūra</item>
+    <item>Vizitas pas notarą</item>
+    <item>Atvirų durų diena</item>
+    <item>Sandorio sudarymas</item>
+    <item>Konsultacija</item>
+    <item>Sutarties paruošimas</item>
+    <item>Įkelti skelbimą</item>
+        <item>Kita</item>
+</string-array>
+<string-array name="dokumentai">
+    <item>Dvišalė sutartis</item>
+    <item>Preliminarioji sutartis</item>
+    <item>Tarpininkavimo sutartis</item>
+    <item>Žemės ūkio deklaracija</item>
+</string-array>
+</resources>

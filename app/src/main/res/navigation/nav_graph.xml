@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/nav_home"
+    >
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.adsinjava.ui.LoginFragment"
+        android:label="Prisijungimas NT darbuotojams"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/createRequestFragment"
+        android:name="com.example.adsinjava.ui.CreateRequestFragment"
+        android:label="Sukurti užklausą"
+        tools:layout="@layout/fragment_create_request" />
+    <fragment
+        android:id="@+id/addNewAdFragment"
+        android:name="com.example.adsinjava.ui.AddNewAdFragment"
+        android:label="Pridėti naują skelbimą"
+        tools:layout="@layout/fragment_add_new_ad" />
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.adsinjava.ui.HomeFragment"
+        android:label="NT Skelbimai"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_addNewAdFragment"
+            app:destination="@id/addNewAdFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_request"
+        android:name="com.example.adsinjava.ui.CreateRequestFragment"
+        android:label="Sukurti užklausą"
+        tools:layout="@layout/fragment_create_request" />
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.adsinjava.ui.DetailsFragment"
+        android:label="Detalės"
+        tools:layout="@layout/fragment_details" >
+
+
+        <argument
+            android:name="details"
+            app:argType="com.example.adsinjava.model.Ads" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddNewSchedule"
+        android:name="com.example.adsinjava.ui.FragmentAddNewSchedule"
+        android:label="Pridėti naują darbo įrašą"
+        tools:layout="@layout/fragment_add_new_schedule" />
+    <fragment
+        android:id="@+id/reviewRequestsFragment"
+        android:name="com.example.adsinjava.ui.ReviewRequestsFragment"
+        android:label="Visos klientų užklausos"
+        tools:layout="@layout/fragment_review_requests" />
+    <fragment
+        android:id="@+id/taxCalculatorFragment"
+        android:name="com.example.adsinjava.ui.TaxCalculator"
+        android:label="Mokesčių skaičiuoklė"
+        tools:layout="@layout/fragment_tax_calculator" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.adsinjava.ui.ScheduleFragment"
+        android:label="Darbotvarkė"
+        tools:layout="@layout/fragment_schedule" >
+        <action
+            android:id="@+id/action_scheduleFragment_to_fragmentAddNewSchedule"
+            app:destination="@id/fragmentAddNewSchedule" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.adsinjava.ui.ContactList"
+        android:label="Kontaktai"
+        tools:layout="@layout/fragment_contact_list">
+    <action
+        android:id="@+id/action_contact_to_fragmentAddNewContact"
+        app:destination="@id/fragmentAddNewContact" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentAddNewContact"
+        android:name="com.example.adsinjava.ui.AddNewContact"
+        android:label="Naujas kontaktas"
+        tools:layout="@layout/fragment_add_new_contact" />
+    <fragment
+        android:id="@+id/fragmentDocument"
+        android:name="com.example.adsinjava.ui.Documents"
+        android:label="Dokumentai"
+        tools:layout="@layout/fragment_documents" >
+        <action
+            android:id="@+id/action_fragmentDocument_to_pdfFragment"
+            app:destination="@id/pdfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pdfFragment"
+        android:name="com.example.adsinjava.ui.PdfFragment"
+        android:label="fragment_pdf"
+        tools:layout="@layout/fragment_pdf" >
+        <argument
+            android:name="pdf"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>

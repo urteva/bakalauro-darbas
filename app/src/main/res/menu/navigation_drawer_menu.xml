@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/nav_SeeRequests"
+        android:title="Peržiūrėti užklausas"
+        android:icon="@drawable/baseline_article_24"
+        />
+    <item
+        android:id="@+id/nav_Mokesciai"
+        android:title="Mokesčių skaičiuoklė"
+        android:icon="@drawable/baseline_tax_calculator"
+        />
+    <item
+        android:id="@+id/nav_schedule"
+        android:title="Darbotvarkė"
+        android:icon="@drawable/baseline_schedule"
+        />
+    <item
+        android:id="@+id/nav_contacts"
+        android:title="Kontaktų sąrašas"
+        android:icon="@drawable/baseline_contacts"
+        />
+    <item
+        android:id="@+id/nav_documents"
+        android:title="Dokumentai ir sutartys"
+        android:icon="@drawable/baseline_documents"
+        />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Atsijungti"
+        android:icon="@drawable/baseline_logout_24"/>
+</menu>

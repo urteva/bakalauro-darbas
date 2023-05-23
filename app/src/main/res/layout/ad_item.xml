@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white2"
+        android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/adImage"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:layout_constraintTop_toBottomOf="@id/adImage"
+        android:textColor="@color/black"
+        tools:text="aloooo"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginTop="12dp"
+            android:text="Kaina: "
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/txtDesc"
+            tools:layout_editor_absoluteX="9dp"
+            tools:text="fsdfs" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

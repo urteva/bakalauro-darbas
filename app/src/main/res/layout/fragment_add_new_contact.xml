@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.AddNewContact"
+    >
+
+    <TextView
+        android:id="@+id/textViewPirmas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Įveskite kontaktinius duomenis:"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:padding="16dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PhoneCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:hint="Telefono numeris"
+        app:endIconMode="clear_text"
+        app:layout_constraintTop_toBottomOf="@id/textViewPirmas">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/InputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoSizeTextType="uniform"
+            android:hint="Tel.nr"
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/Pavadinimas"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneCont"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Kontakto inicialai" />
+    <EditText
+        android:id="@+id/OtherDetails"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/Pavadinimas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Kitos detalės" />
+
+    <Button
+        android:id="@+id/saveContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Išsaugoti"
+        app:layout_constraintTop_toBottomOf="@+id/OtherDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

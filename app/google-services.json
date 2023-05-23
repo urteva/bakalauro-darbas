@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "869828266758",
+    "project_id": "ads-in-java",
+    "storage_bucket": "ads-in-java.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869828266758:android:e417dde3ae61bc21376c87",
+        "android_client_info": {
+          "package_name": "com.example.adsinjava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869828266758-srov0h1jr38tj4nrlkfa9un4muksfcg8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adsinjava",
+            "certificate_hash": "10d350b7762601ee78950249ab2b2820802ac748"
+          }
+        },
+        {
+          "client_id": "869828266758-t3a52o38lnuhu6p37ilb6ca9s4a3kbh6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBphCN2_JZ_MmdXcjmKNSfcIsisXV_1Fog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869828266758-t3a52o38lnuhu6p37ilb6ca9s4a3kbh6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
